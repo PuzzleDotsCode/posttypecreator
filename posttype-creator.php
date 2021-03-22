@@ -30,11 +30,12 @@ require_once( PD_PTC_PLUGIN_DIR . 'class.ptc.php' );
 // Include init method from our main class ('PostTypeCreator' in ./class.posttypecreator.php)
 add_action( 'init' , array( 'PTC_MAIN' , 'init' ) );
 
+
 // Fire Admin configuration when Admin is initiated
-// if ( is_admin() ){
-//   require_once( PD_PTC_PLUGIN_DIR . 'class.ptc-admin.php' );
-//   add_action( 'init' , array( 'PTC_ADMIN' , 'init' ) );
-// }
+if ( is_admin() ){
+  require_once( PD_PTC_PLUGIN_DIR . 'class.ptc-admin.php' );
+  add_action( 'init' , array( 'PTC_ADMIN' , 'init' ) );
+}
 
 
 

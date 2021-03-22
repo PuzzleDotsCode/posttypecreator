@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-we are on the posttypecreator base file
+we are on the class posttypecreator base file
 <?php global $post; echo $post->post_type; ?>
 
 
